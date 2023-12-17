@@ -1,0 +1,35 @@
+debug = DEBUG_OFF;
+
+mode = FILELIST;
+input_dir = "/Users/phucdang/Documents/dangnguyen/Document/project/titan";
+
+
+output_format = MDV;
+output_dir = "/Users/phucdang/Documents/dangnguyen/Document/project/titan/titan";
+
+
+
+interp_mode = INTERP_MODE_CART;
+
+center_grid_on_radar = TRUE;
+
+grid_projection = PROJ_FLAT;
+
+select_fields = FALSE;
+
+transform_fields_for_interpolation = TRUE;
+
+transform_fields = {
+
+{
+  input_name = "reflectivity",
+  output_name = "reflectivity",
+  output_units = "dBZ",
+  transform = TRANSFORM_DB_TO_LINEAR_AND_BACK
+}
+
+}; 
+specify_output_filename = FALSE;
+
+netcdf_compressed = FALSE;
+bound_fields = FALSE;

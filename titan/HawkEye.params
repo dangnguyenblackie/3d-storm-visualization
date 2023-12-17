@@ -1,0 +1,98 @@
+# ================
+### 
+# ================
+debug = DEBUG_OFF;
+begin_in_archive_mode = TRUE;
+archive_start_time = "2023 06 01 00 00 00";
+archive_data_url = "/Users/phucdang/Documents/dangnguyen/Document/project/titan/Data/01/cfradial";
+
+# ================
+### diplay status
+# ================
+show_status_in_gui = {
+
+azimuth = TRUE,
+
+elevation = TRUE,
+
+fixed_angle = TRUE,
+
+volume_number = FALSE,
+
+sweep_number = TRUE,
+
+n_samples = TRUE,
+
+n_gates = TRUE,
+
+gate_length = TRUE,
+
+pulse_width = TRUE,
+
+prf_mode = TRUE,
+
+prf = TRUE,
+
+nyquist = TRUE,
+
+max_range = TRUE,
+
+unambiguous_range = TRUE,
+
+measured_power_h = FALSE,
+
+measured_power_v = FALSE,
+
+scan_name = FALSE,
+
+scan_mode = TRUE,
+
+polarization_mode = TRUE,
+
+latitude = TRUE,
+
+longitude = TRUE,
+
+altitude = TRUE,
+
+altitude_rate = FALSE,
+
+sun_elevation = TRUE,
+
+sun_azimuth = TRUE,
+
+speed = FALSE,
+
+heading = FALSE,
+
+track = FALSE
+
+}; 
+
+
+fields = {
+
+{
+    label = "DBZ",
+    raw_name = "reflectivity",
+    filtered_name = "",
+    units = "dBZ",
+    color_map = "dbz.colors",
+    shortcut = "1"
+}
+
+}
+
+
+
+
+
+max_range_km = 200;
+
+display_mode = POLAR_DISPLAY;
+
+override_radar_name = FALSE;
+display_site_name = FALSE;
+
+background_color = "black";
+grid_and_range_ring_color = "white";
